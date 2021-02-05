@@ -50,8 +50,8 @@ void InitLogger() {
 
   logger = std::make_shared<spdlog::logger>("console", begin(sinkList), end(sinkList));
   spdlog::register_logger(logger);
-  logger->set_level(spdlog::level::debug);
-  logger->flush_on(spdlog::level::debug);
+  logger->set_level(spdlog::level::warn);
+  logger->flush_on(spdlog::level::warn);
 }
 
 void UninitLogger() {
